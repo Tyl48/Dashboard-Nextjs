@@ -31,6 +31,6 @@
     "app/lib/placeholder-data.ts",
     "scripts/seed.js",
     ".next/dev/types/**/*.ts"
-, "app/layout.js", "app/page.js"  ],
+, "app/layout.js", "app/page.js", "tailwind.config.mjs"  ],
   "exclude": ["node_modules"]
 }

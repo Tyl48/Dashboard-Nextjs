@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss';
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,11 +11,13 @@ const config: Config = {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
-        blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
+        lightHover: '#fcf4ff',
+        darkHover: '#2a004a',
+        darkTheme: '#11001f',
         },
+        fontFamily: {
+          Outfit: ["Outfit", "sans-serif"],
+          Ovo: ["Ovo", "serif"]
       },
     },
     keyframes: {
@@ -29,4 +30,3 @@ const config: Config = {
   },
   plugins: [require('@tailwindcss/forms')],
 };
-export default config;
